@@ -1,0 +1,57 @@
+.pagetitle {
+  font-size: $font-size-h1;
+  font-weight: $fw-9;
+
+  &p {
+    font-size: $font-size-l;
+    font-weight: $fw-7;
+  }
+}
+
+.article {
+  &-list-content time {
+    margin-bottom: 0.25rem;
+  }
+
+  &-tag {
+    color: $color-font-base;
+    font-size: $font-size-m;
+    margin-bottom: 0.5rem;
+  }
+
+  &-title {
+    font-size: $font-size-l;
+    font-weight: $fw-7;
+    margin-bottom: 0.5rem;
+  }
+
+  &-content {
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    word-break: break-word;
+    white-space: normal;
+
+    &-show {
+      -webkit-line-clamp: initial;
+    }
+  }
+}
+
+.showBtn {
+  /*   display: inline-block; */
+  border: 1px solid $color-black;
+  padding: 0.5rem 1rem;
+  border-radius: 2.5rem;
+  color: $color-font-main;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover {
+    color: $color-bg-base;
+    background: $color-font-main;
+  }
+}

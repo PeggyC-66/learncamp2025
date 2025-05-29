@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import "variable";
+@import "reset";
+@import "base";
+@import "layout";
+
+.contact {
+  .contact1 {
+    font-size: $font-size-xl;
+  }
+
+  .contact2 {
+    color: $color-font-base;
+    .bi-font {
+      font-size: $font-size-m;
+      margin: 4px 10px;
+    }
+  }
+}
+
+.block-title {
+  color: $color-font-base;
+  font-weight: $fw-7;
+  font-size: $font-size-l;
+}
+
+.content-title {
+  font-weight: $fw-7;
+  font-size: 1.25rem;
+}
+
+.bi-font24 {
+  font-size: 1.5rem;
+  margin: 0;
+  line-height: 0;
+}
+
+.bi-font24::before {
+  vertical-align: 0;
+}
+
+.nav {
+  top: 0;
+  padding: 1.5rem 5rem;
+
+  &-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  &-li {
+    font-size: $font-size-l;
+    font-weight: $fw-7;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  //   border: 1px solid $color-bd-base;
+  box-shadow: inset 0 0 0 1px $color-font-main;
+  gap: 1.5rem;
+  max-height: 640px;
+
+  &-banner {
+    width: 50%;
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog-content/About%20Section.png");
+  }
+
+  &-content {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .article-list-content {
+      // width: 67.09%;
+      width: 90%;
+    }
+  }
+}
+
+.main {
+  box-shadow: inset 0 0 0 1px $color-font-main;
+
+  .block-container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 636px;
+    width: 100%;
+  }
+
+  .flex-row {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .block-img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .content-text-list {
+    margin-top: 0.5rem;
+  }
+
+  .block-tip {
+    background: $color-bg-block;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    font-weight: $fw-7;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  li {
+    margin-left: 1.5rem;
+    list-style-position: initial;
+  }
+
+  .page-dir {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    // gap: 4px;
+    border-radius: 2.5rem;
+    border: 1px solid $color-black;
+    color: $color-font-main;
+  }
+
+  .page-control a:hover {
+    background: $color-font-base;
+    color: $color-white;
+  }
+}
+
+.footer {
+  .container {
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 5rem 0;
+    padding: 5rem 1rem;
+  }
+
+  p {
+    background: $color-white;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+}
+
+/* 桌機版：預設樣式，不加 media query */
+
+@media screen and (max-width: 1199px) {
+  /* 螢幕寬度 ≤ 1199px：平板或小型桌機樣式 */
+}
+
+@media screen and (max-width: 991px) {
+  /* 螢幕寬度 ≤ 991px：小平板樣式 */
+  .nav {
+    padding: 1rem 5rem;
+  }
+  .header {
+    display: block;
+    max-height: 100%;
+
+    &-banner {
+      // max-height: 400px;
+      aspect-ratio: 1.168 / 1;
+    }
+
+    &-banner,
+    &-content {
+      width: 100%;
+      max-height: 640px;
+    }
+
+    &-content {
+      padding: 1.5rem;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* 螢幕寬度 ≤ 767px：手機樣式 */
+
+  .footer {
+    .container {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* 螢幕寬度 ≤ 575px：小手機樣式 */
+}

@@ -1,0 +1,71 @@
+// base 全站設定
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  // outline: solid 1px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  //   font-size: inherit;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-font-base;
+  }
+}
+
+html {
+  font-size: 16px;
+  max-width: 1920px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: $font-family-base;
+  font-weight: $fw-5;
+  line-height: 1.5;
+  background-color: $color-bg-base;
+
+  // max-width: 1920px;
+  // margin: 0 auto;
+  /*   letter-spacing: 1px; */
+}
+
+h1 {
+  font-size: $font-size-h1;
+  font-weight: $fw-9;
+}
+
+.bgimg-style {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1.168 / 1;
+  overflow: visiable;
+}
+
+i {
+  display: inline-block;
+}
+
+.bi::before {
+  vertical-align: 0;
+}
+
+.color-b {
+  color: $color-black;
+}

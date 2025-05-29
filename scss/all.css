@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: #0027D5;
+}
+
+html {
+  font-size: 16px;
+  max-width: 1920px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: #FBFBFB;
+  /*   letter-spacing: 1px; */
+}
+
+h1 {
+  font-size: 7.5rem;
+  font-weight: 900;
+}
+
+.bgimg-style {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1.168/1;
+  overflow: visiable;
+}
+
+i {
+  display: inline-block;
+}
+
+.bi::before {
+  vertical-align: 0;
+}
+
+.color-b {
+  color: #000000;
+}
+
+.pagetitle {
+  font-size: 7.5rem;
+  font-weight: 900;
+}
+.pagetitlep {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.article-list-content time {
+  margin-bottom: 0.25rem;
+}
+.article-tag {
+  color: #0027D5;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.article-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.article-content {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-word;
+  white-space: normal;
+}
+.article-content-show {
+  -webkit-line-clamp: initial;
+}
+
+.showBtn {
+  /*   display: inline-block; */
+  border: 1px solid #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 2.5rem;
+  color: #4B4B4B;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.showBtn:hover {
+  color: #FBFBFB;
+  background: #4B4B4B;
+}
+
+.headerbt-content-p {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.block1-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.block1-p {
+  font-weight: 500;
+  color: #4B4B4B;
+}/*# sourceMappingURL=all.css.map */

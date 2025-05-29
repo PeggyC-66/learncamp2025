@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import "variable";
+@import "reset";
+@import "base";
+@import "layout";
+
+.headerbt-content-p {
+  font-size: $font-size-l;
+  font-weight: $fw-5;
+}
+
+.block1 {
+  &-title {
+    font-size: $font-size-l;
+    font-weight: $fw-7;
+  }
+
+  &-p {
+    font-weight: $fw-5;
+    color: $color-font-main;
+  }
+}

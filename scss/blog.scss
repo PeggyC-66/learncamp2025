@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import "variable";
+@import "reset";
+@import "base";
+@import "layout";
+
+.pagecontrol {
+  .bi-mg {
+    padding: 0px 4px;
+  }
+
+  .pgnum {
+    margin: 8px 0px;
+    p {
+      width: 40px;
+    }
+  }
+}
+
+.contact {
+  .contact1 {
+    font-size: $font-size-xl;
+  }
+
+  .contact2 {
+    color: $color-font-base;
+    .bi-font {
+      font-size: $font-size-m;
+      margin: 4px 10px;
+    }
+  }
+}
+
+.nav {
+  top: 0;
+  padding: 1.5rem 5rem;
+
+  &-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  &-li {
+    font-size: $font-size-l;
+    font-weight: $fw-7;
+  }
+}
+
+.header {
+  display: flex;
+  // height: 834px;
+  // height: 19.21%;
+
+  &-banner,
+  &-content {
+    width: 50%;
+    // padding: 18.75rem 5rem;
+    color: $color-font-base;
+  }
+
+  &-banner {
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section.png");
+  }
+
+  &-content {
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section2.png");
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+    // padding-left: 5rem;
+    padding: 18.75rem 0 18.75rem 5rem;
+
+    p {
+      font-size: $font-size-l;
+      font-weight: $fw-7;
+    }
+  }
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  //   border: 1px solid $color-bd-base;
+  box-shadow: inset 0 0 0 1px $color-font-main;
+  // height: 640px;
+  // height: 14.75%;
+
+  &-banner {
+    width: 49%;
+    // padding: 5rem 0;
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/About%20Section.png");
+  }
+
+  &-content {
+    width: 49%;
+    // padding: 5rem 0;
+    padding: 13rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .article-list-content {
+      // width: 67.09%;
+      width: 90%;
+    }
+  }
+}
+
+.main {
+  box-shadow: inset 0 0 0 1px $color-font-main;
+  .article {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+    //   border: 1px solid $color-bd-base;
+    //   box-shadow: inset 0 0 0 1px $color-font-main;
+  }
+
+  .searchbox {
+    max-width: 32.099%;
+    //   border: 1px solid $color-font-main;
+    box-shadow: inset 0 0 0 1px $color-font-main;
+    border-radius: 40px;
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /*   font-size: 24px; */
+    color: $color-font-main;
+
+    .bi-sh {
+      font-size: $font-size-m;
+      width: $font-size-m;
+      height: $font-size-m;
+      line-height: 1;
+      // vertical-align: -0.0625rem;
+    }
+
+    .sh-input {
+      display: block;
+      width: 100%;
+      padding: 0;
+      font-size: 1rem;
+      font-weight: $fw-5;
+      line-height: 1.5;
+      border: 0;
+      background: inherit;
+    }
+
+    //   .bi-search::before {
+    //     // vertical-align: 0.0625rem;
+    //   }
+  }
+
+  .article-ul {
+    display: flex;
+    // justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5rem 1.5rem;
+    margin: 2.5rem 0;
+
+    .article-list {
+      /*   width: 33%; */
+      // border: 1px solid #fbfbfb;
+      // border-radius: 10px;
+      /*   max-width: 416px; */
+      // max-width: 32.099%;
+      // max-width: 31.96%;
+      max-width: 31.9%;
+      /*   margin: 15px 0px; */
+      /*   padding: 0 12px; */
+      list-style-type: none;
+      background: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .article-list-img img {
+        width: 100%;
+      }
+    }
+  }
+
+  .pagecontrol {
+    text-align: center;
+    max-width: 25.3%;
+    margin: 0 auto;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background: $color-white;
+
+    a:hover {
+      color: $color-font-base;
+    }
+  }
+}
+
+.footer {
+  .container {
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 5rem 0;
+    padding: 5rem 1rem;
+  }
+
+  p {
+    background: $color-white;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+}
+
+/* 桌機版：預設樣式，不加 media query */
+
+@media screen and (max-width: 1199px) {
+  /* 螢幕寬度 ≤ 1199px：平板或小型桌機樣式 */
+  .header {
+    max-height: 654px;
+    &-content {
+      padding-left: 3rem;
+    }
+  }
+  .news {
+    max-height: 500px;
+
+    &-content {
+      .article-list-content {
+        width: 90%;
+      }
+    }
+  }
+
+  .main {
+    .article {
+      padding: 2.5rem 1rem;
+    }
+
+    .article-ul {
+      // justify-content: center;
+      gap: 2.5rem 1.5rem;
+      // margin: 2.5rem 0;
+
+      .article-list {
+        // max-width: 48.7%;
+        max-width: 48%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* 螢幕寬度 ≤ 991px：小平板樣式 */
+  .nav {
+    padding: 1rem 5rem;
+  }
+  .header {
+    max-height: 600px;
+    &-content {
+      padding-left: 1.5rem;
+    }
+  }
+  .news {
+    max-height: 458px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* 螢幕寬度 ≤ 767px：手機樣式 */
+  .header,
+  .news {
+    display: block;
+    max-height: 100%;
+
+    &-banner {
+      max-height: 600px;
+      aspect-ratio: 1.168 / 1;
+    }
+
+    &-banner,
+    &-content {
+      width: 100%;
+    }
+
+    &-content {
+      padding: 1.5rem;
+      align-items: center;
+    }
+  }
+
+  .news {
+    &-banner {
+      max-height: 400px;
+    }
+
+    &-content {
+      align-items: flex-start;
+    }
+
+    .article-list-content {
+      width: 100%;
+    }
+  }
+
+  .main {
+    .searchbox {
+      max-width: 66%;
+    }
+
+    .article-ul {
+      flex-direction: column;
+
+      .article-list {
+        // max-width: 48.7%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    .container {
+      display: none;
+    }
+  }
+
+  .pagetitle {
+    font-size: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* 螢幕寬度 ≤ 575px：小手機樣式 */
+}

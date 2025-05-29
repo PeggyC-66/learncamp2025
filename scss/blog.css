@@ -1,0 +1,428 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: #0027D5;
+}
+
+html {
+  font-size: 16px;
+  max-width: 1920px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: #FBFBFB;
+  /*   letter-spacing: 1px; */
+}
+
+h1 {
+  font-size: 7.5rem;
+  font-weight: 900;
+}
+
+.bgimg-style {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1.168/1;
+  overflow: visiable;
+}
+
+i {
+  display: inline-block;
+}
+
+.bi::before {
+  vertical-align: 0;
+}
+
+.color-b {
+  color: #000000;
+}
+
+.pagetitle {
+  font-size: 7.5rem;
+  font-weight: 900;
+}
+.pagetitlep {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.article-list-content time {
+  margin-bottom: 0.25rem;
+}
+.article-tag {
+  color: #0027D5;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.article-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.article-content {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-word;
+  white-space: normal;
+}
+.article-content-show {
+  -webkit-line-clamp: initial;
+}
+
+.showBtn {
+  /*   display: inline-block; */
+  border: 1px solid #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 2.5rem;
+  color: #4B4B4B;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.showBtn:hover {
+  color: #FBFBFB;
+  background: #4B4B4B;
+}
+
+.pagecontrol .bi-mg {
+  padding: 0px 4px;
+}
+.pagecontrol .pgnum {
+  margin: 8px 0px;
+}
+.pagecontrol .pgnum p {
+  width: 40px;
+}
+
+.contact .contact1 {
+  font-size: 2rem;
+}
+.contact .contact2 {
+  color: #0027D5;
+}
+.contact .contact2 .bi-font {
+  font-size: 1.5rem;
+  margin: 4px 10px;
+}
+
+.nav {
+  top: 0;
+  padding: 1.5rem 5rem;
+}
+.nav-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.nav-li {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+}
+.header-banner, .header-content {
+  width: 50%;
+  color: #0027D5;
+}
+.header-banner {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section.png");
+}
+.header-content {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/index/Hero%20Section2.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 18.75rem 0 18.75rem 5rem;
+}
+.header-content p {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 0 0 0 1px #4B4B4B;
+}
+.news-banner {
+  width: 49%;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-web-camp/desktop/blog/About%20Section.png");
+}
+.news-content {
+  width: 49%;
+  padding: 13rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.news-content .article-list-content {
+  width: 90%;
+}
+
+.main {
+  box-shadow: inset 0 0 0 1px #4B4B4B;
+}
+.main .article {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+}
+.main .searchbox {
+  max-width: 32.099%;
+  box-shadow: inset 0 0 0 1px #4B4B4B;
+  border-radius: 40px;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /*   font-size: 24px; */
+  color: #4B4B4B;
+}
+.main .searchbox .bi-sh {
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1;
+}
+.main .searchbox .sh-input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  border: 0;
+  background: inherit;
+}
+.main .article-ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5rem 1.5rem;
+  margin: 2.5rem 0;
+}
+.main .article-ul .article-list {
+  /*   width: 33%; */
+  /*   max-width: 416px; */
+  max-width: 31.9%;
+  /*   margin: 15px 0px; */
+  /*   padding: 0 12px; */
+  list-style-type: none;
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main .article-ul .article-list .article-list-img img {
+  width: 100%;
+}
+.main .pagecontrol {
+  text-align: center;
+  max-width: 25.3%;
+  margin: 0 auto;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background: #FFFFFF;
+}
+.main .pagecontrol a:hover {
+  color: #0027D5;
+}
+
+.footer .container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.footer .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+.footer p {
+  background: #FFFFFF;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+/* 桌機版：預設樣式，不加 media query */
+@media screen and (max-width: 1199px) {
+  /* 螢幕寬度 ≤ 1199px：平板或小型桌機樣式 */
+  .header {
+    max-height: 654px;
+  }
+  .header-content {
+    padding-left: 3rem;
+  }
+  .news {
+    max-height: 500px;
+  }
+  .news-content .article-list-content {
+    width: 90%;
+  }
+  .main .article {
+    padding: 2.5rem 1rem;
+  }
+  .main .article-ul {
+    gap: 2.5rem 1.5rem;
+  }
+  .main .article-ul .article-list {
+    max-width: 48%;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* 螢幕寬度 ≤ 991px：小平板樣式 */
+  .nav {
+    padding: 1rem 5rem;
+  }
+  .header {
+    max-height: 600px;
+  }
+  .header-content {
+    padding-left: 1.5rem;
+  }
+  .news {
+    max-height: 458px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* 螢幕寬度 ≤ 767px：手機樣式 */
+  .header,
+  .news {
+    display: block;
+    max-height: 100%;
+  }
+  .header-banner,
+  .news-banner {
+    max-height: 600px;
+    aspect-ratio: 1.168/1;
+  }
+  .header-banner, .header-content,
+  .news-banner,
+  .news-content {
+    width: 100%;
+  }
+  .header-content,
+  .news-content {
+    padding: 1.5rem;
+    align-items: center;
+  }
+  .news-banner {
+    max-height: 400px;
+  }
+  .news-content {
+    align-items: flex-start;
+  }
+  .news .article-list-content {
+    width: 100%;
+  }
+  .main .searchbox {
+    max-width: 66%;
+  }
+  .main .article-ul {
+    flex-direction: column;
+  }
+  .main .article-ul .article-list {
+    max-width: 100%;
+  }
+  .footer .container {
+    display: none;
+  }
+  .pagetitle {
+    font-size: 5rem !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  /* 螢幕寬度 ≤ 575px：小手機樣式 */
+}/*# sourceMappingURL=blog.css.map */
