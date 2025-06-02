@@ -263,6 +263,7 @@ i {
   justify-content: center;
   gap: 0.75rem;
   padding: 18.75rem 1rem 18.75rem 5rem;
+  text-align: center;
 }
 .headerbt {
   width: 56.102%;
